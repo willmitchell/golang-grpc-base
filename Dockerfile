@@ -6,7 +6,7 @@ RUN apt-get update -qq && apt-get install unzip -y \
     && cd /usr/local && unzip /tmp/protoc-3.7.1-linux-x86_64.zip \
     && export PATH=/usr/local/bin:$PATH \
     && curl -sL https://deb.nodesource.com/setup_11.x | bash - && apt-get install -y nodejs \
-    && npm i -g serverless
+    && npm i -g serverless serverless-pseudo-parameters
 
 RUN go get -u google.golang.org/grpc \
     && go get -u github.com/golang/protobuf/proto \
@@ -14,5 +14,6 @@ RUN go get -u google.golang.org/grpc \
     && go get -u github.com/aws/aws-sdk-go \
     && go get -u github.com/aws/aws-lambda-go/events \
     && go get -u github.com/aws/aws-lambda-go/lambda \
+    && go get -u github.com/sirupsen/logrus \
     && go get -u github.com/lib/pq
 
