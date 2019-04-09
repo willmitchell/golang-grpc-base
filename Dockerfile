@@ -15,5 +15,6 @@ RUN go get -u google.golang.org/grpc \
     && go get -u github.com/aws/aws-lambda-go/events \
     && go get -u github.com/aws/aws-lambda-go/lambda \
     && go get -u github.com/sirupsen/logrus \
+    && go get github.com/deckarep/golang-set \
     && go get -u github.com/lib/pq
 
