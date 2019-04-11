@@ -19,5 +19,7 @@ RUN go get -u google.golang.org/grpc \
     && go get -u github.com/mitchellh/go-homedir \
     && go get -u github.com/spf13/cobra \
     && go get -u github.com/spf13/viper \
+    && go get -u github.com/inconshreveable/mousetrap \
+    && go get -u github.com/konsorten/go-windows-terminal-sequences \
     && go get -u github.com/lib/pq
 
